@@ -30,34 +30,59 @@ body {
 
 .card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: column;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: auto;
+  grid-auto-flow: column;
 }
-
 
 .card {
-  background-color: #ead3a7;
+  /* position: relative; */
+  /* display: block; */
+  background-color: #f7d736;
+  /* padding: 10px 15px; */
+  width: 150px;
+  height: 100px;
+
+  /* overflow: hidden; */
+
+  border-width: 0;
+  outline: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  margin: 20px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s;
 }
 
+/* .card {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ead3a7;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+} */
+
 .card-title {
-  font-size: 1.5em;
+  margin: 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 0.75em;
   font-weight: bold;
   color: #2c2c2c;
 }
 
-.card-text {
-  font-size: 1em;
+.card-content {
+
+  margin: 10px 10px 10px 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 0.5em;
   color: #4c4c4c;
 }
 
 .appbar {
   background-color: #f7d736;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 0px;
   margin: 0px;
 }
@@ -69,8 +94,8 @@ body {
 }
 
 .subtitle {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
-  font-weight: bold;
   color: #2c2c2c;
 }
 
