@@ -73,10 +73,13 @@ body {
   font-weight: bold;
   margin-bottom: 0.5rem;
   border: 0px;
+  outline: none;
 }
 
 .autoresize{
   border: 0px;
+  resize: none;
+  outline: none;
 }
 
 .card-title {
@@ -185,6 +188,22 @@ body {
 }
 .card-color-5{
   background-color:  #abe9c1;
+}
+
+.card-rotation-1{
+  transform: rotate(0deg);
+}
+.card-rotation-2{
+  transform: rotate(5deg);
+}
+.card-rotation-3{
+  transform: rotate(-5deg);
+}
+.card-rotation-4{
+  transform: rotate(10deg);
+}
+.card-rotation-5{
+  transform: rotate(-10deg);
 }
 
 /* Você pode usar o CSS comentado abaixo, se ajudar */
